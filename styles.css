@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;    
   margin: 0px;
-  justify-content: space-between;    
+  justify-content: space-evenly;    
   min-height: 100vh;
 }
 
@@ -32,6 +32,8 @@ body {
   align-items: center;
   justify-content: space-between;
   color: white;
+  padding-bottom: 60px;
+  gap: 5px;
 }
 
 .title-text-container {
@@ -76,6 +78,8 @@ a {
   display: flex;
   flex-direction: column;  
   gap: 50px;
+  padding-bottom: 50px;
+  margin: 0px 140px;
 }
 
 .information-title {
@@ -90,7 +94,8 @@ a {
 .information-cards-section {
   display: flex;
   justify-content: center;  
-  align-items: center;
+  align-items: center; 
+  gap: 10px; 
 }
 
 .info-card {
@@ -111,17 +116,19 @@ a {
 .info-card-subtext {
   text-align: center;
   flex: 1;
+  font-size: smaller;
+  
 }
 
 .quote-container {
   background-color: #E5E7EB;
   display: flex;
   flex-wrap: wrap;
-  padding: 120px;
+  padding: 45px 260px;
 }
 
 .quote { 
-  font-size: 36px;
+  font-size: 26px;
   font-style: italic;  
   font-weight: 100;
   color: #1F2937;
@@ -135,10 +142,11 @@ a {
 .call-to-action {
   background-color: #3882F6;
   color: #E5E7EB;
-  margin: 40px 100px;
+  margin: 40px 140px;
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  align-items: center;
+  gap: 50px;  
 }
 
 .call-to-action-title {
@@ -153,6 +161,8 @@ a {
   border-style: solid;
   border-color: #E5E7EB;
   border-radius: 10%;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .footer {
@@ -161,6 +171,6 @@ a {
   justify-content: center;
   align-items: center;  
   color: #E5E7EB;
-  padding: 20px;
+  padding: 25px;
   font-size: 12px;
 }
