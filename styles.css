@@ -2,6 +2,8 @@ body {
   display: flex;
   flex-direction: column;    
   margin: 0px;
+  justify-content: space-between;    
+  min-height: 100vh;
 }
 
 .header,
@@ -54,8 +56,7 @@ body {
 
 .title-image-container {
   background-color: gray;
-  padding: 80px 100px;
-  margin: auto;
+  padding: 80px 100px;  
 }
 
 a {
@@ -74,7 +75,7 @@ a {
 .information-container {
   display: flex;
   flex-direction: column;  
-  gap: 80px;
+  gap: 50px;
 }
 
 .information-title {
@@ -88,8 +89,7 @@ a {
 
 .information-cards-section {
   display: flex;
-  justify-content: space-around;
-  gap: 160px;
+  justify-content: center;  
   align-items: center;
 }
 
@@ -101,23 +101,29 @@ a {
   padding: 50px;
 }
 
-.information-cards-container {
+.information-card-container {
   display: flex;  
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 5px;  
+}
+
+.info-card-subtext {
+  text-align: center;
+  flex: 1;
 }
 
 .quote-container {
   background-color: #E5E7EB;
   display: flex;
   flex-wrap: wrap;
-  padding: 100px;
+  padding: 120px;
 }
 
 .quote { 
   font-size: 36px;
-  font-style: italic;
+  font-style: italic;  
+  font-weight: 100;
   color: #1F2937;
 }
 
@@ -150,7 +156,7 @@ a {
 }
 
 .footer {
-  margin-top: auto;
+  margin-top: auto;  
   display: flex;
   justify-content: center;
   align-items: center;  
